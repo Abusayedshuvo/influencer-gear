@@ -219,3 +219,69 @@ footer .social a {
     text-align: center;
     display: inline-block;
 }
+
+@media screen and (max-width:576px){
+    nav 
+     {
+        flex-direction: column;
+    }
+
+    .banner, .featured  {
+        flex-direction: column-reverse;
+    }
+
+    nav, .banner{
+        padding: 30px;
+    }
+
+    .collection .container {
+        grid-template-columns: 1fr;
+    }
+
+    .banner .title {
+        font-size: 28px;
+    }
+
+    .banner .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .brand {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand img {
+       margin: auto;
+    }
+
+    nav .menu li a {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+    .featured {
+        text-align: center;
+        margin: 50px 30px;
+    }
+
+    .featured img {
+        width: 100%;
+    }
+
+    .featured h1 {
+        font-size: 24px;
+    }
+
+    footer h1 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
